@@ -48,7 +48,7 @@ func FindSecondaryNetworkInterface(ctx context.Context) (string, error) {
 		return "", fmt.Errorf("no secondary interface found")
 	}
 	cut := string(output)[idx:]
-	strings.Index(cut, ":")
+	idx = strings.Index(cut, ":")
 	if idx < 0 {
 		return "", fmt.Errorf("no secondary interface found")
 	}
