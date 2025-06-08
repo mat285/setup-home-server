@@ -7,6 +7,7 @@ func All() []*task.Task {
 		InstallTailscale(),
 		InstallZsh(),
 		InstallOhMyZsh(),
+		SetupDirectLink(),
 		InstallGo(),
 	}
 }
